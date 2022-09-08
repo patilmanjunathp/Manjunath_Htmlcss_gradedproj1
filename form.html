@@ -1,0 +1,121 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <section id="form">
+       <div class="form-container">
+           <div class="details">
+               <form action="#">
+                <table>
+                    <tr>
+                     <td><h4>1. Your Contact Details</h4></td>
+                    </tr> 
+                    <tr>
+                     <td><input type="text"  placeholder="Full Name" required><hr>  </td>          
+                     <td><input type="text"  placeholder="Patient Id if exists" required><hr></td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                     <td><input type="number" name="number" placeholder="Contact Number" minlength="10" min="6000000000" max="9999999999" required><hr></td>
+                     <td><input type="email" name="email" placeholder="Enter email"  required><hr></td>
+                    </tr>
+
+                   <tr>
+                   <tr></tr>
+                   <tr></tr>
+                     <td><h4>2. Address</h4></td>
+                   </tr>
+                   <tr>
+                     <td><input type="text"  placeholder="House Number" required><hr> </td>
+                     <td><input type="text"  placeholder="Street" required><hr></td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                      <td><input type="text"  placeholder="Area" required><hr></td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                      <td>
+                          <label for="District">District</label>
+                          <select name="District" required>
+                             <option value="">Choose</option>
+                             <option value="">Bangalore</option>
+                             <option value="">Mysore</option>
+                             <option value="">mangalore</option>
+                             <option value="">Belgaum</option>
+                           </select>
+                      </td>
+                    </tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr>
+                       <td><h4>3. Choose the Test Type</h4></td>
+                   </tr>
+                   <tr>
+                      <td>
+                          <p><b>Check atleast one box without fail</b></p> 
+                      </td>
+                      <td><input type="checkbox" id="a1" name="option" value="CBC" >
+                            <label for="a1">CBC</label><br></td>
+                   </tr>
+                   <tr>
+                    <td></td>
+                    <td><input type="checkbox" id="a2" name="option" value="Complete Urine">
+                      <label for="a2">Complete Urine</label><br></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td><input type="checkbox" id="a3" name="option" value="Lipid Profile">
+                        <label for="a3">Lipid Profile</label><br></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td><input type="checkbox" id="a3" name="option" value="Thyroid Stimulating Hormone(TSH)">
+                        <label for="a3">Thyroid Stimulating Hormone(TSH)</label><br></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td><input type="checkbox" id="a3" name="option" value="Glucose Test">
+                        <label for="a3">Glucose Test</label><br></td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                      <td><h4>4. Do you want a hard copy of the report also?</h4></td>
+                      <td>
+                           <select name="Hard Copy" required>
+                              <option value="">Choose</option>
+                              <option value="">Yes</option>
+                              <option value="">No</option>
+                          </select>
+                      </td>
+                  </tr>
+                  <tr></tr>
+                  <tr>
+                       <td><h4>5. Select Your Comfortable Date and Time</h4></td>
+                  </tr>
+                  <tr>
+                       <td>Date:</td>
+                       <td><input type="date"  placeholder="Date" required><hr></td>
+                 </tr>
+                  <tr>
+                       <td>Time:</td>
+                       <td><input type="time"  placeholder="Time" required><hr></td>
+                  </tr>
+               </table>
+          </div>
+          <div class="figure">
+            <img src="Images\Lab-Test\lab-test.jpg">
+          </div>
+      </div>
+         <button class="buttons">Submit</button>
+         <button class="buttons">Reset</button>
+         </form>  
+   </section>
+</body>
+</html>
